@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const auth = require('./auth.json');
+//const auth = require('./auth.json');
 const wheel = require('./sufferingWheel.js');
 const factory = require('./monsterFactory.js');
 
@@ -69,4 +69,4 @@ client.on('message', msg =>{
 })
 
 
-client.login(auth.token)
+client.login(process.env.BOT_TOKEN)
