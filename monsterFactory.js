@@ -35,7 +35,7 @@ var add = [
 ]
 var monster;
 module.exports = {
-	createMonster:function(){
+	createMonster:function(tf){
 		monster = [];
 
 		monster[0] = Math.floor(Math.random() * 2);
@@ -49,7 +49,7 @@ module.exports = {
 		monster[4] = monsters[Math.floor(Math.random() * 10000000000) % 6];
 		console.log(monster[4]);
 
-		if(monster[0] === 0){
+		if((monster[0] === 0 && !tf) || tf){
 			return "You have hit a spot of bad luck... Your monster will be a "
 			+ monster[1] + ", " + monster[2] + ", " + monster[3] + ", " + monster[4] + ".";
 		}

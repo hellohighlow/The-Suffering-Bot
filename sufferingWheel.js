@@ -35,5 +35,9 @@ module.exports = {
 				return explains[i];
 			}
 		}
+	},
+	trustForsake:function(){
+		var index = Math.floor(Math.random()*100000000) % 2;
+		return index;
 	}
 }
