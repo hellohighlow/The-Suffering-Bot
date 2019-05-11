@@ -20,8 +20,7 @@
   "author": "Zachary Goldberg",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^11.4.2",
-    "sqlite": "^3.0.3"
+    "discord.js": "^11.4.2"
   },
   "devDependencies": {
     "nodemon": "^1.19.0"
